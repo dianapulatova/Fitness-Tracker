@@ -35,11 +35,12 @@ const workoutSchema = new Schema({
             trim: true,
             required: "Enter an exercise."
         },
-    
-    
-    {reps: 10},
-    {sets: 4}}
-  ],
+        sets: {
+            type: Number,
+            trim: true,
+            required: "Enter an exercise."
+        },
+    }]
   
 });
 
