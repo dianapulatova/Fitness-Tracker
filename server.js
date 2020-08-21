@@ -84,7 +84,17 @@ app.put("/api/workout/:id", (req, res) => {
     });  
 });
 
-// 
+//Post request
+app.post("/api/workouts", (req, res) => {
+    let data = req.body;
+    db.Workout.create({
+        day: new Date().setDate(new Date().getDate())
+    }).then(dbUpdate => {
+        res.json(dbUpdate);
+    }).catch(err => {
+        res.json(err);
+    });
+});
 
 // Start the server
 app.listen(PORT, () => {
