@@ -26,8 +26,9 @@ app.use(express.static("public"));
 
 
 // Heroku - process.env.MONGODB_URI; localhost -  "mongodb://localhost/workout"
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
 
+// 
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true, useUnifiedTopology: true});
 // 
 const dbConfig = process.env.MONGODB_URI;
 
