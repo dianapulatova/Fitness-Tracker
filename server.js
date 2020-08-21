@@ -67,7 +67,24 @@ app.get("/api/workouts/range", (req, res) => {
 app.put("/api/workout/:id", (req, res) => {
     let urlData = req.params;
     let data = req.body;
-})
+    db.Workout.updateOne({_id: urlData.id}, {$push: {exercises: [
+        {
+            "type": data.type, 
+            "name": data.name, 
+            "duration": data.duration,
+            "distance": data.distance, 
+            "weight": data.weight, 
+            "reps": data.reps, 
+            "sets": data.sets
+        }
+    ]} }).then(dbUpdate => {
+        res.json(dbUpdate);
+    }).catch(err => {
+        res.json(err);
+    });  
+});
+
+// 
 
 // Start the server
 app.listen(PORT, () => {
