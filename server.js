@@ -96,6 +96,8 @@ app.post("/api/workouts", (req, res) => {
     });
 });
 
+connectDB()
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
