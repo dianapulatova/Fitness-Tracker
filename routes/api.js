@@ -3,6 +3,8 @@ const path = require("path");
 const db = require("../models");
 const mongojs = require("mongojs");
 
+// Promise.reject(new Error('woops'));
+
 
 
 router.get("/api/workouts", (req, res) => {
