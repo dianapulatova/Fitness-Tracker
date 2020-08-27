@@ -70,7 +70,7 @@ Framework | URL
 
 ## Author
 
-* **Diana Pulatova** - *PWA* - [Diana Pulatova Progressive Budget Repo](https://github.com/dianapulatova/Fitness-Tracker)
+* **Diana Pulatova** - *PWA* - [Diana Pulatova Fitness Tracker Repo](https://github.com/dianapulatova/Fitness-Tracker)
 
  ## Questions
    
