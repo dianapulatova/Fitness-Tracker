@@ -5,6 +5,7 @@
 # Fitness Tracker
   
 **Project Description** - Fitness Tracker App allows users to track their workout duration, date, performed exercises and more.
+![Demo](assets/Gif/Fitness-Tracker.gif)
 
 ## Table of Contents
 
