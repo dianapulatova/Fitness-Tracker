@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const db = require("../models");
 const path = require('path');
-const mongojs = require("mongojs");
+const
 
 //opens up the excercise.html file
 router.get("/exercise", (req, res) => {
