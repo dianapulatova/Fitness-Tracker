@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-const MONGODB_URI = process.env.MONGODB_URI || 
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout" , //need mongodb uri here  
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useCreateIndex: true
