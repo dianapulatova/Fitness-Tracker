@@ -28,7 +28,7 @@
 The link below will give you direct access to Fitness Tracker App application using your web browser via the Heroku web service. 
 
 <!-- Heroku References: heroku-link | repo-link -->
-* [Progressive-Budget](heroku-link)
+<!-- * [Fitness-Tracker](heroku-link) -->
 
 ## Local Environment Setup
 To use Fitness Tracker web application application from your local environment, you must accomplish the following steps below:
