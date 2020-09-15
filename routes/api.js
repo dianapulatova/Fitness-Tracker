@@ -67,9 +67,9 @@ router.put("/api/workouts/:id", (req, res) => {
     {_id: mongojs.ObjectId(req.params.id)},
     { $push: {exercises: req.body },
      $inc: { totalDuration: req.body.duration }})
-    .then(newExcercise => {
-      console.log(newExcercise)
-      res.json(newExcercise);
+    .then(newExercise => {
+      console.log(newExercise)
+      res.json(newExercise);
     })
     .catch(err => {
       res.status(400).json(err);
