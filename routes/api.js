@@ -3,7 +3,7 @@ const db = require("../models");
 const path = require('path');
 const
 
-//opens up the excercise.html file
+//opens up the exercise.html file
 router.get("/exercise", (req, res) => {
   res.sendFile(path.join(__dirname, '../public', 'exercise.html'));
 });
